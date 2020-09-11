@@ -7,21 +7,21 @@ public class Main {
         Person randy = new Person("Randy", "Orton", 43);
         Person pavel = new Person("Pavel", "Perviy", 48);
 
-        /* //Сериализация в файл с помощью класса ObjectOutputStream
+
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(
                 new FileOutputStream("person.out"));
         objectOutputStream.writeObject(randy);
         objectOutputStream.writeObject(pavel);
         objectOutputStream.close();
 
-        // Востановление из файла с помощью класса ObjectInputStream
+
         ObjectInputStream objectInputStream = new ObjectInputStream(
                 new FileInputStream("person.out"));
         Person newRandy = (Person) objectInputStream.readObject();
         Person newPavel = (Person) objectInputStream.readObject();
-        objectInputStream.close();*/
+        objectInputStream.close();
 
-        FileOutputStream fileOutputStream = new FileOutputStream("C:\\Users\\Username\\Desktop\\save.ser");
+       /* FileOutputStream fileOutputStream = new FileOutputStream("C:\\Users\\Username\\Desktop\\save.ser");
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
 
 
@@ -38,7 +38,7 @@ public class Main {
 
         objectInputStream.close();
 
-
+*/
         System.out.println("Before Serialize: " + "\n" + randy + "\n" + pavel);
         System.out.println("After Restored: " + "\n" + newRandy + "\n");
     }
