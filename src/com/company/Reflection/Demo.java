@@ -1,4 +1,4 @@
 package com.company.Reflection;
 
-public @interface MyAnotation {
+public class Demo {
 }
