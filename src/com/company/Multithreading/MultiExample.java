@@ -22,7 +22,6 @@ public class MultiExample {
         };
         myThread.start();
         runnable.run();
-        RandomAccessFile
 
 
     }
